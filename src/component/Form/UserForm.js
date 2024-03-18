@@ -104,6 +104,8 @@ export const UserForm = ({ data }) => {
                 phone_number: userDetails.phone_number,
                 email: userDetails.email,
             });
+        } else {
+            setError(response.data.message);
         }
     }
 
